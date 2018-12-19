@@ -85,6 +85,13 @@ public class IsPalindrome {
         return isPalindrome;
     }
 
+    public boolean isPalindrome4(int x) {
+        boolean isPalindrome = true;
+        StringBuilder stringBuilder = new StringBuilder(String.valueOf(x)).reverse();
+        isPalindrome = String.valueOf(x).equals(stringBuilder.toString());
+        return isPalindrome;
+    }
+
 
     public static void main(String[] args) {
         IsPalindrome isPalindrome = new IsPalindrome();
@@ -103,5 +110,11 @@ public class IsPalindrome {
         System.out.println(isPalindrome.isPalindrome3(-121));
         System.out.println(isPalindrome.isPalindrome3(10));
         System.out.println(isPalindrome.isPalindrome3(0));
+
+        System.out.println(isPalindrome.isPalindrome4(121));
+        System.out.println(isPalindrome.isPalindrome4(1221));
+        System.out.println(isPalindrome.isPalindrome4(-121));
+        System.out.println(isPalindrome.isPalindrome4(10));
+        System.out.println(isPalindrome.isPalindrome4(0));
     }
 }
