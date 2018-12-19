@@ -1,4 +1,4 @@
-package com.sjh.algorithm.simple;
+package com.sjh.algorithm.simple.integer;
 
 /**
  * @author sjh
